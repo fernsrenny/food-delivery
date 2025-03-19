@@ -31,7 +31,7 @@ const Login = () => {
   const registerUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:3100/signup`,
+        `https://food-delivery-app-phi-three.vercel.app/api/user/signup`,
         currentUser
       );
       const { user, token } = response.data;
@@ -49,7 +49,7 @@ const Login = () => {
   const loginUser = async (currentUser) => {
     try {
       const response = await axios.post(
-        `http://localhost:3100/login`,
+        `https://food-delivery-app-phi-three.vercel.app/api/user/login`,
         currentUser
       );
       const { user, token } = response.data;
